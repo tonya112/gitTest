@@ -12,7 +12,7 @@ const HomeList = ({channelId}: Props) => {
 
     const [listRes,setListRes] = useState<ListRes>({
         results:[],
-        pre_timestamp: '' + new Date().getTime()
+        pre_timestamp: '' + new Date().getTime() //test dayjs
     })
 
     useEffect(() => {
