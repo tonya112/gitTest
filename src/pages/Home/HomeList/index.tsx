@@ -20,7 +20,7 @@ const HomeList = ({channelId}: Props) => {
             try {
                 const res = await fetchListAPI({
                     channel_id: channelId,
-                    timestamp: '' + new Date().getTime()
+                    timestamp: '' + new Date().getTime() // micic confliction test
                 })
                 setListRes({
                     results: res.data.data.results,
